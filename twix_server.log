@@ -1,0 +1,7 @@
+2015-04-01 11:32 AM - Starting Twix Communicator Server...
+Twix Communicator Server v2.0.0 listening on port 2600
+	Compatible with Twix Client v3.0.0
+Waiting for connections.
+Connected to SQL Server. Catalog: TwixDB
+Connected to Datawarehouse Server. Catalog: ThermaDW
+2015-04-01 11:32 AM - Successfully connected to Databases.

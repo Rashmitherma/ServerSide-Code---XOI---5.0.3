@@ -1,0 +1,1 @@
+java -Xmx128m -jar twix_serrorfix.jar 10.1.2.55 1433 TwixDB TwixUser test123 ThermaDW dwuser test123 > twix_server.log 2> twix_error.log

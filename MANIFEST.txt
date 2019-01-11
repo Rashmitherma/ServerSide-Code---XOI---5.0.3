@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Rsrc-Class-Path: ./ commons-codec-1.6-javadoc.jar commons-codec-1.6-so
+ urces.jar sqljdbc4.jar commons-codec-1.6.jar commons-codec-1.6-tests.
+ jar
+Class-Path: .
+Rsrc-Main-Class: Twix_Socket
+Main-Class: org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader
+
+
