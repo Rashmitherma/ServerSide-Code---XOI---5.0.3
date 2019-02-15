@@ -1449,7 +1449,7 @@ public class Twix_ServerProcessor
 		stmt.setString(index++, tag.jobNo);
 		stmt.setString(index++, tag.empno);
 		stmt.setString(index++, tag.disposition);
-		stmt.setString(index+2, tag.xoi_flag);
+		stmt.setString(index++, tag.xoi_flag);
 		stmt.execute();
 		
 		int size = tag.units.size();
@@ -2001,7 +2001,48 @@ public class Twix_ServerProcessor
 			tc.job_no = rec.job_no;
 			tc.pay_per = rec.pay_per;
 			tc.empno = rec.empno;
-			tc.UpdateAcct();
+		
+			if (rec.job_no.contentEquals("000145  "))
+			{
+				tc.job_name= "                             ";
+				tc.job_no = "      ";
+				tc.acct = "SO";
+			}
+			else if (rec.job_no.contentEquals("000146  "))
+			{	
+				tc.job_name= "                             ";
+				tc.acct = "PS";
+				tc.job_no = "      ";
+			}
+			else if (rec.job_no.contentEquals("000134  "))
+			{
+				tc.job_name= "                             ";
+				tc.acct = "EC";
+				tc.job_no = "      ";
+			}
+			else if (rec.job_no.contentEquals("000149  "))
+			{
+				tc.job_name= "                             ";
+				tc.job_no = "      ";
+				tc.acct = "S";
+			}
+			else if (rec.job_no.contentEquals("000129  "))
+			{
+				tc.job_name= "                             ";
+				tc.acct = "SU";
+				tc.job_no = "      ";
+			}
+			else if (rec.job_no.contentEquals("000133  "))
+			{
+				tc.job_name= "                             ";
+				tc.acct = "K";
+				tc.job_no = "      ";
+		
+			}
+			else
+				//tc.acct = rec.job_no;
+				tc.UpdateAcct();
+		
 			
 			tc.date_start = rec.date_start;
 			tc.date_end = rec.date_end;
